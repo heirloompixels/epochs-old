@@ -1,0 +1,41 @@
+---
+layout: catalogue
+---
+<div id="menu">
+        <a href="/" alt="main menu">Menu</a>
+</div>
+
+
+
+<div id="catalogue" class="content">
+  <h1>Catalogue Raisonne</h1> 
+  <p>The Catalogue Raisonne of is an ongoing project to document all artworks made by Kyle Parker Cunningham.  This project has been ongoing since the mid 2010's, formalized in 2020 and put online in serious form in 2021.
+  <p>
+  <p>Some works were not documented by the artist and their current location is unknown.  If you have an artwork by Kyle but do not find it here please contact us so that it might be added to the Catalogue.</p>
+  <p>Ownership and Provenence information will be added as it is realized and from 2021 onwards superior record keeping will be utilized to keep the catalogue as accurate as possible.</p>
+
+  <h2>Works by Year</h2>
+  <ul>
+{% for p in collections.catalogue %}
+<li><a href="{{ p.url | absolute_url }}"> [{{p.data.year}}] ({{p.data.type}}) {{ p.data.title }}</a></li>
+{% endfor %}
+  </ul>
+
+  <h2>Painting</h2>
+  <ul>
+{% for p in collections.painting %}
+   {% if p.data.type contains "painting" %}
+   <li><a href="{{ p.url | absolute_url }}"> [{{p.data.year}}]{{ p.data.title }}</a></li>
+   {% endif %}
+{% endfor %}
+  </ul>
+
+
+  <h2 class="todo">Printmaking</h2>
+  <h2 class="todo">Drawing</h2>
+  <h2 class="todo">Installation</h2>
+  <h2 class="todo">Stone</h2>
+  <h2 class="todo">Photography</h2>
+  <h2 class="todo">Words</h2>
+
+</div>
