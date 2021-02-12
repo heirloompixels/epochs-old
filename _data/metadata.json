@@ -1,12 +1,12 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "title": "Kyle Parker Cunningham",
+  "url": "https://kyleparkercunningham.com",
+  "description": "Wildplaces and Experimental Art",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Wildplaces and Experimental Art",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://example.com/"
+    "id": "https://kyleparkercunningham.com/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
